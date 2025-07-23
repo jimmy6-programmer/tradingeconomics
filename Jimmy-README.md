@@ -19,65 +19,64 @@ It allows users to select countries and view their GDP data visualized on a char
 ## Setup Instructions
 
 1. **Clone the forked repo:**
-   ```bash
-   git clone https://github.com/yourusername/tradingeconomics.git
-   cd tradingeconomics
 
-2. Create and activate a virtual environment (recommended):
+    ```bash
+    git clone https://github.com/yourusername/tradingeconomics.git
+    cd tradingeconomics
+    ```
 
-    bash
-    Copy
-    Edit
+2. **Create and activate a virtual environment (recommended):**
+
+    ```bash
     python3 -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
 
-3. Install dependencies:
+3. **Install dependencies:**
 
-    bash
-    Copy
-    Edit
+    ```bash
     pip install -r requirements.txt
+    ```
 
-4. Add your Trading Economics API key in app.py:
+4. **Add your Trading Economics API key in `app.py`:**
 
-    python
-    Copy
-    Edit
+    ```python
     API_KEY = '118070cc8815413:j8dwdh6u9ftgk0f'
+    ```
 
+5. **Run the Flask backend:**
 
-5. Run the Flask backend:
+    ```bash
+    python app.py
+    ```
 
-    bash
-    Copy
-    Edit
-    python app.py        
+6. **Open `index.html` in your browser** (you can use Live Server extension or open the file directly).
 
-6. Open index.html in your browser (you can use Live Server or open directly).
+---
 
+## Usage
 
-    Usage
+- Select two countries from the dropdown menus.
+- Click **Compare** to fetch and display their GDP data.
+- View the interactive chart and table below.
 
-        Select two countries from the dropdown menus.
+---
 
-        Click "Compare" to fetch and display their GDP data.
+## Notes
 
-        View the interactive chart and table below.
+- Free Trading Economics accounts only support a limited set of countries.
+- The backend proxies requests to avoid exposing the API key publicly.
+- CORS is handled with `flask-cors`.
 
-    Notes
+---
 
-        Free Trading Economics accounts only support a limited set of countries.
+## Contribution
 
-        The backend proxies requests to avoid exposing the API key publicly.
+Feel free to fork the repo and submit pull requests.
 
-        CORS is handled with flask-cors.
+---
 
-    Contribution
+## Contact
 
-       Feel free to fork the repo and submit pull requests.
-
-    Contact
-
-       GATERA Jimmy — jimmygatera60@gmail.com
-       GitHub — https://github.com/jimmy6-programmer/   
-
+**GATERA Jimmy** — jimmygatera60@gmail.com  
+GitHub — https://github.com/jimmy6-programmer/
