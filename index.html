@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compare Country GDP</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
+</head>
+<body>
+
+    <div class="background-text">
+        <span class="trading">Trading</span>
+        <span class="economics">Economics</span>
+    </div>
+        
+
+  <div class="container">
+    <h1>Compare Country GDP</h1>
+
+    <div class="selectors">
+        <select id="country1">
+            <option value="Sweden">Sweden</option>
+            <option value="Mexico">Mexico</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Thailand">Thailand</option>
+        </select>
+          
+        <select id="country2">
+            <option value="Sweden">Sweden</option>
+            <option value="Mexico">Mexico</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Thailand">Thailand</option>
+        </select>
+          
+
+      <button onclick="getGDPData()">Compare</button>
+    </div>
+
+    <canvas id="gdpChart" width="600" height="300"></canvas>
+
+    <table id="gdpTable">
+      <thead>
+        <tr><th>Country</th><th>GDP</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="loader" style="display: none; text-align: center;">
+        <div id="lottie-container" style="width: 120px; height: 120px; margin: auto;"></div>
+        <p>Loading GDP data...</p>
+    </div>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

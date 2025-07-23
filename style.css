@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #007bff 50%, #ffffff 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-text {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 0;
+  }
+  
+  .background-text span {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0 20px;
+  }
+  
+  .background-text .trading {
+    color: white;
+    background: #007bff;
+    padding-right: 10px;
+  }
+  
+  .background-text .economics {
+    color: #007bff;
+    background: white;
+    padding-left: 10px;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .selectors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  select,
+  button {
+    padding: 10px;
+    font-size: 14px;
+    flex: 1 1 45%;
+    min-width: 120px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #gdpChart {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px;
+  }
+  
+  #gdpTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  #gdpTable th,
+  #gdpTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Loader section */
+  #loader {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    .selectors {
+      flex-direction: column;
+    }
+  
+    select,
+    button {
+      flex: 1 1 100%;
+    }
+  
+    .background-text span {
+      font-size: 36px;
+      padding: 0 10px;
+    }
+  }
+  
